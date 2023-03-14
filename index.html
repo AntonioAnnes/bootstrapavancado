@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap avancado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        body { 
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top 3 Filmes do ano</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Entretenimento
+                    </header>
+                    <img src="https://br.web.img2.acsta.net/pictures/22/05/16/17/59/5165498.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Tudo em Todo lugar ao mesmo tempo</h4>
+                        <p class="card-text">
+                            Filme que te joga em um multiverso de infinitas possibilidades. 
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>10/08/2022 as 19hrs</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Entretenimento
+                    </header>
+                    <img  src="https://www.arrobanerd.com.br/wp-content/uploads/2023/01/os-fabelmans-critica.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">The Fabelmans</h4>
+                        <p class="card-text">
+                            Mais um clássico de Spielberg sobre a história do cinema.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>10/08/2022 as 19hrs</time>
+                    </footer>
+                </article>
+            </div><div class="col-12 col-sm-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Entretenimento
+                    </header>
+                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/09/07/1251607577-allquietonthewesternfrontxlg.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Nada de novo no Front</h4>
+                        <p class="card-text">
+                            Um épico que mostra a realidade cruel da guerra.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>10/08/2022 as 19hrs</time>
+                    </footer>
+                </article>
+            </div>
+    </div>
+
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/01/TUDO-EM-TODO-O-LUGAR-AO-MESMO-TEMPO_Diamond-Films_2.jpg?w=876&h=484&crop=1">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="https://s2.glbimg.com/Ot4STP9OcL6GQJ9QM9Zsz6EkOMk=/0x0:2560x1707/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/5/P/OD9Sb8TnmAE3RBI06IWw/os-fabelmans.jpg">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="https://cinepop.com.br/wp-content/uploads/2023/02/front1.jpg">
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
